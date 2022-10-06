@@ -3,7 +3,7 @@
 last updated: last updated: ###TIMESTAMP###   
 author: Lukasz Ochmanski (github@ochmanski.de)  
   
-![[Github tag](https://badgen.net/github/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17?icon=github)](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17/tags/###CI_COMMIT_TAG###)  
+![[Github tag](https://badgen.net/github/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17?icon=github&kill_cache=1)](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17/tags/###CI_COMMIT_TAG###)  
 &nbsp;
   
 **Project details:**  
