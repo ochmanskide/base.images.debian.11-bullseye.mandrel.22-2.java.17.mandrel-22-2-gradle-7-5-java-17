@@ -1,8 +1,8 @@
 # Debian-based Mandrel image optimized for building Quarkus projects
 
-last updated: Thu Oct  6 10:13:29 CEST 2022  
+last updated: Thu Oct  6 10:55:21 CEST 2022  
 author: Lukasz Ochmanski (github@ochmanski.de)  
-Latest tag: 0.0.2  
+Latest tag: 0.0.3  
 &nbsp;
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -52,12 +52,12 @@ sdk install gradle 7.5
 
 ## 1. How to clone:
 ```bash
-git clone git@github.com:lukaszochmanski/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17.git $GITHUB/base/images/debian/11-bullseye/mandrel/22-2/java/17/mandrel-22-2-gradle-7-5-java-17
+git clone git@github.com:ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17.git $GITHUB/base/images/debian/11-bullseye/mandrel/22-2/java/17/mandrel-22-2-gradle-7-5-java-17
 ```
 &nbsp;
 
 ## 2. GitHub repository URL
-https://github.com/lukaszochmanski/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
+https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 &nbsp;
 
 &nbsp;
@@ -86,13 +86,13 @@ https://hub.docker.com/repository/docker/ochmanskide/base.images.debian.11-bulls
 
 ## 5. Image coordinates:
 ```  
-docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:0.0.2
+docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:0.0.3
 ```
 
 ## 6. Docker images:
 ```
 REPOSITORY                                                                                                                                   TAG                    SIZE
-ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   0.0.2                  1.18GB
+ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   0.0.3                  1.18GB
 ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   latest                 1.18GB
 debian                                                                                            stable-20220711-slim   80.4MB
 ```
@@ -179,7 +179,7 @@ apt install g++ zlib1g-dev libfreetype6-dev
 
 ## 9. image details:
 ```bash
-$ docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:0.0.2
+$ docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:0.0.3
 
 # echo $0
 /bin/bash
@@ -209,7 +209,7 @@ JAVA_HOME=/opt/graalvm
 GRADLE_HOME=/opt/gradle
 DOCKER_REPOSITORY=releases
 PWD=/home/gradle
-IMAGE_SOURCE=https://github.com/lukaszochmanski/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
+IMAGE_SOURCE=https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 HOME=/root
 GRADLE_VERSION=7.5
 TERM=xterm
@@ -296,7 +296,7 @@ docker images && echo
 ### 10.1. Run Quarkus with Gradle
 clone the project:
 ```bash
-git clone https://github.com/lukaszochmanski/quarkus-jpa-example.git /home/quarkus/quarkus-jpa-example
+git clone https://github.com/ochmanskide/quarkus-jpa-example.git /home/quarkus/quarkus-jpa-example
 cd /home/quarkus/quarkus-jpa-example
 ```
 build native image:
