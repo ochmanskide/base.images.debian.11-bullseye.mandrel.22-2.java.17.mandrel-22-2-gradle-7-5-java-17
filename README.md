@@ -1,6 +1,6 @@
 # Debian-based Mandrel image optimized for building Quarkus projects
 
-last updated: last updated: Thu Oct  6 15:08:04 CEST 2022    
+last updated: last updated: Thu Oct  6 15:15:53 CEST 2022    
 author: Lukasz Ochmanski (github@ochmanski.de)  
   
 ![tag](https://badgen.net/github/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17?icon=github&label=latest%20tag) 
@@ -101,13 +101,13 @@ https://hub.docker.com/repository/docker/ochmanskide/base.images.debian.11-bulls
 
 ## 5. Image coordinates:
 ```  
-docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:1.0.3
+docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:1.0.4
 ```
 
 ## 6. Docker images:
 ```
 REPOSITORY                                                                                        TAG                    SIZE
-ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   1.0.3                  1.18GB
+ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   1.0.4                  1.18GB
 ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   latest                 1.18GB
 debian                                                                                            stable-20220711-slim   80.4MB
 ```
@@ -194,7 +194,7 @@ apt install g++ zlib1g-dev libfreetype6-dev
 
 ## 9. image details:
 ```bash
-$ docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:1.0.3
+$ docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:1.0.4
 
 # echo $0
 /bin/bash
@@ -438,3 +438,15 @@ when the build completes, you may run the image, which is located somewhere in /
 ```
 
 ## 11. Frequently Asked Questions (FAQ)
+### 11.1. Is this project OpenSource?
+Yes, you can use this project in anyway you like. Feel free to copy, fork or do whatever you like with it.  
+If you have questions about licensing, feel free to email me.  
+
+### 11.2. How can I contact the maintainer?
+if you have questions, feel free to send me an email: github@ochmanski.de  
+I will be happy to help you.
+
+### 11.2. Is this image compatible with AWS CodeBuild pipeline?
+- yes, you could use it in the AWS environment, but you just need to install AWS-CLI.  
+I already prepared a shell script `./scripts/install/05-install-aws-cli.sh`.  
+Simply run it and you should be able to authenticate with all AWS resources.  
