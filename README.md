@@ -1,28 +1,20 @@
 # Debian-based Mandrel image optimized for building Quarkus projects
 
+**Git Respository:**  
 last updated: Thu Oct  6 13:18:14 CEST 2022  
-author: Lukasz Ochmanski (github@ochmanski.de)  
-Latest tag: 1.0.2  
+![author](https://badgen.net/badge/icon/Lukasz%20Ochmanski%20(github%20ochmanski.de)?icon=github&label=maintainer) 
+![tag](https://badgen.net/github/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17?icon=github&label=latest%20tag) 
 &nbsp;
+  
+**Project details:**  
+![GitHub](https://img.shields.io/github/license/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17)
+![java17](https://img.shields.io/badge/Java-17-brightgreen) 
+![gradle](https://img.shields.io/badge/Gradle-7.5-brightgreen) 
+![graalvm](https://img.shields.io/badge/GraalVM-22.2.0-brightgreen) 
+![mandrel](https://img.shields.io/badge/Mandrel-22.2.0-brightgreen) 
+![distribution](https://img.shields.io/badge/Distribution-Debian-brightgreen) 
+![arch](https://img.shields.io/badge/Arch-amd64-brightgreen)  
 
-`#java17`  
-`#gradle`  
-`#graalvm`  
-`#mandrel`  
-`#quarkus`  
-`#debian`  
-`#amd64`  
-`#native-image`  
-
-![Docker Pulls](https://img.shields.io/docker/pulls/ochmanskide/graalvm-gradle?label=graalvm-gradle:latest%20pull) 
-![Docker Pulls](https://img.shields.io/docker/pulls/ochmanskide/mandrel-gradle?label=mandrel-gradl:lateste%20pulls) 
-![Docker Pulls](https://img.shields.io/docker/pulls/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17) 
-![Docker Stars](https://img.shields.io/docker/stars/ochmanskide/graalvm-gradle?label=graalvm-gradle%20stars) 
-![Docker Stars](https://img.shields.io/docker/stars/ochmanskide/mandrel-gradle?label=mandrel-gradle%20stars) 
-![Docker Stars](https://img.shields.io/docker/stars/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17) 
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/ochmanskide/mandrel-gradle/latest) 
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/ochmanskide/mandrel-gradle/latest?label=latest%20pushed%20image) 
-![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17?label=latest%20git%20tag)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
