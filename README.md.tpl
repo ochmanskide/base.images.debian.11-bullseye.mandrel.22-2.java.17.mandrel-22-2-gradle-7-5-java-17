@@ -1,19 +1,22 @@
 # Debian-based Mandrel image optimized for building Quarkus projects
 
-last updated: ###TIMESTAMP###  
+last updated: last updated: ###TIMESTAMP###    
 author: Lukasz Ochmanski (github@ochmanski.de)  
-Latest tag: ###CI_COMMIT_TAG###  
+  
+![tag](https://badgen.net/github/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17?icon=github&label=latest%20tag) 
 &nbsp;
-
-`#java17`  
-`#gradle`  
-`#graalvm`  
-`#mandrel`  
-`#quarkus`  
-`#debian`  
-`#amd64`  
-`#native-image`  
-
+  
+**Project details:**  
+![GitHub](https://img.shields.io/github/license/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17)
+![java17](https://img.shields.io/badge/Java-17-brightgreen) 
+![gradle](https://img.shields.io/badge/Gradle-7.5-brightgreen) 
+![graalvm](https://img.shields.io/badge/GraalVM-22.2.0-brightgreen) 
+![mandrel](https://img.shields.io/badge/Mandrel-22.2.0-brightgreen) 
+![distribution](https://img.shields.io/badge/Distribution-Debian-brightgreen) 
+![arch](https://img.shields.io/badge/Arch-amd64-brightgreen)  
+&nbsp;  
+  
+&nbsp;
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
