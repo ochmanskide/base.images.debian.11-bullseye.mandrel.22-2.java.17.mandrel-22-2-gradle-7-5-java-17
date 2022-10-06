@@ -36,9 +36,8 @@ author: Lukasz Ochmanski (github@ochmanski.de)
     - [8.2. Mandrel](#82-mandrel)
 - [9. image details](#9-image-details)
 - [10. Quick start](#10-quick-start)
-- [10.1. Run Quarkus with Gradle](#101-run-quarkus-with-gradle)
+    - [10.1. Run Quarkus with Gradle](#101-run-quarkus-with-gradle)
     - [10.2. Run Quarkus with Maven](#102-run-quarkus-with-maven)
-    - [10.3. How to convert Maven project into Gradle](#103-how-to-convert-maven-project-into-gradle)
 - [11. Frequently Asked Questions (FAQ)](#11-frequently-asked-questions-faq)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
