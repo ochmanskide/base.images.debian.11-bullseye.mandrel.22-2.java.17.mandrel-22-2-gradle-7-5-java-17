@@ -5,6 +5,15 @@ author: Lukasz Ochmanski (github@ochmanski.de)
 Latest tag: ###CI_COMMIT_TAG###  
 &nbsp;
 
+`#java17`  
+`#gradle`  
+`#graalvm`  
+`#mandrel`  
+`#quarkus`  
+`#debian`  
+`#amd64`  
+`#native-tools`  
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
