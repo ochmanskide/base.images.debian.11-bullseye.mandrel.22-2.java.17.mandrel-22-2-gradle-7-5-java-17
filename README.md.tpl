@@ -61,7 +61,8 @@ sdk install gradle 7.5
 
 ## 1. How to clone:
 ```bash
-git clone git@github.com:ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17.git $GITHUB/base/images/debian/11-bullseye/mandrel/22-2/java/17/mandrel-22-2-gradle-7-5-java-17
+git clone git@github.com:ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17.git \
+~/Workspace/ochmanskide/base/images/debian/11-bullseye/mandrel/22-2/java/17/mandrel-22-2-gradle-7-5-java-17
 ```
 &nbsp;
 
@@ -72,6 +73,8 @@ https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.
 &nbsp;
 ## 3. How to build locally:
 ```bash
+export DOCKER_HUB_HOST=$USER
+cd ~/Workspace/ochmanskide/base/images/debian/11-bullseye/mandrel/22-2/java/17/mandrel-22-2-gradle-7-5-java-17
 gradle docker
 ```
 to push:
@@ -100,7 +103,7 @@ docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mand
 
 ## 6. Docker images:
 ```
-REPOSITORY                                                                                                                                   TAG                    SIZE
+REPOSITORY                                                                                        TAG                    SIZE
 ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   ###CI_COMMIT_TAG###                  1.18GB
 ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   latest                 1.18GB
 debian                                                                                            stable-20220711-slim   80.4MB
