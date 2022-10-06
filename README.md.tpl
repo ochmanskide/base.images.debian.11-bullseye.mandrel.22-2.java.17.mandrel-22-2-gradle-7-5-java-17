@@ -314,8 +314,8 @@ docker images && echo
 clone the project:
 ```bash
 docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
-git clone https://github.com/ochmanskide/quarkus-jpa-example.git /home/quarkus/quarkus-jpa-example
-cd /home/quarkus/quarkus-jpa-example
+git clone https://github.com/ochmanskide/quarkus.code-with-quarkus.git /home/quarkus/code-with-quarkus
+cd /home/quarkus/code-with-quarkus
 ```
 build native image:
 ```bash
@@ -327,117 +327,12 @@ when the build completes, you may run the image, which is located somewhere in /
 ```
 
 ### 10.2. Run Quarkus with Maven
-a sample script is available at the url:
 ```bash
-cat /scripts/07-test-quarkus.sh
-```
-
-the content
-```bash
-alias la='ls -la'
-apt-get update -y
-apt-get install curl unzip -y
-mkdir /home/quarkus
-cd /home/quarkus
-rm -f /home/quarkus/code-with-quarkus.zip
-rm -rf /home/quarkus/code-with-quarkus
-curl -O -J https://code.quarkus.io/d?e=io.quarkus:quarkus-resteasy -o /home/quarkus/code-with-quarkus.zip
-unzip /home/quarkus/code-with-quarkus.zip -d /home/quarkus/
-rm -f /home/quarkus/code-with-quarkus.zip
+docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
+git clone https://github.com/ochmanskide/quarkus.code-with-quarkus.git /home/quarkus/code-with-quarkus
 cd /home/quarkus/code-with-quarkus/
-/home/quarkus/code-with-quarkus/mvnw package -Pnative -f /home/quarkus/code-with-quarkus/pom.xml
-/home/quarkus/code-with-quarkus/target/code-with-quarkus-1.0.0-SNAPSHOT-runner
-```
-
-### 10.3. How to convert Maven project into Gradle
-You may also run the example in section 10.2 using Gradle.  
-Unfortunately, the author of the project didn't provide such option out-of-the-box and we need to convert the project ourselves.  
-To convert the existing project into gradle project use `gradle init` command and follow prompt messages.  
-Later you will need to add quarkus plugin, which is required for native builds.  
-The content is described at the end of this section.  
-
-```bash
-alias la='ls -la'
-apt-get update -y
-apt-get install curl unzip -y
-mkdir /home/quarkus
-cd /home/quarkus
-rm -f /home/quarkus/code-with-quarkus.zip
-rm -rf /home/quarkus/code-with-quarkus
-curl -O -J https://code.quarkus.io/d?e=io.quarkus:quarkus-resteasy -o /home/quarkus/code-with-quarkus.zip
-unzip /home/quarkus/code-with-quarkus.zip -d /home/quarkus/
-rm -f /home/quarkus/code-with-quarkus.zip
-PROJECT_DIR=/home/quarkus/code-with-quarkus
-cd $PROJECT_DIR
-gradle init -p $PROJECT_DIR
-```
-now edit the files  
-    
-`settings.gradle`:
-```
-pluginManagement {
-    repositories {
-        mavenLocal()
-        gradlePluginPortal()
-        mavenCentral()
-        maven { url 'https://repo.spring.io/milestone' }
-        maven { url 'https://repo.spring.io/snapshot' }
-    }
-    plugins {
-        id "${quarkusPluginId}" version "${quarkusPluginVersion}"
-    }
-}
-rootProject.name = 'code-with-quarkus'
-```
-
-`build.gradle`:
-```
-plugins {
-    id 'java'
-    id 'maven-publish'
-    id 'io.quarkus'
-}
-
-repositories {
-    mavenLocal()
-    maven {
-        url = uri('https://repo.maven.apache.org/maven2/')
-    }
-}
-
-dependencies {
-    implementation(
-        enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"),
-        'io.quarkus:quarkus-resteasy:2.13.0.Final'
-        'io.quarkus:quarkus-arc:2.13.0.Final'
-        'io.quarkus:quarkus-core:2.9.2.Final'
-    )
-    testImplementation(
-        'io.quarkus:quarkus-junit5',
-        'io.rest-assured:rest-assured'
-    )
-}
-
-group = 'org.acme'
-version = '1.0.0-SNAPSHOT'
-```
-  
-`gradle.properties`:
-```properties
-quarkusPluginVersion=2.9.2.Final
-quarkusPlatformArtifactId=quarkus-bom
-quarkusPluginId=io.quarkus
-quarkusPlatformGroupId=io.quarkus.platform
-quarkusPlatformVersion=2.9.2.Final
-```
-
-build native image:
-```bash
-gradle build -x test -Dquarkus.package.type=native
-```
-when the build completes, you may run the image, which is located somewhere in /build/libs/ directory.
-```bash
-/home/quarkus/code-with-quarkus/build/libs/code-with-quarkus-1.0.0-SNAPSHOT-runner
+./mvnw package -Pnative
+./target/code-with-quarkus-1.0.0-SNAPSHOT-runner
 ```
 
 ## 11. Frequently Asked Questions (FAQ)
