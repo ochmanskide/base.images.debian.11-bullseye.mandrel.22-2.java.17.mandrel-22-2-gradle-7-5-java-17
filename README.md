@@ -14,6 +14,10 @@ Latest tag: 1.0.2
 `#amd64`  
 `#native-image`  
 
+![Docker Pulls](https://img.shields.io/docker/pulls/ochmanskide/graalvm-gradle?label=graalvm-gradle:latest%20pull)  
+![Docker Pulls](https://img.shields.io/docker/pulls/ochmanskide/mandrel-gradle?label=mandrel-gradl:lateste%20pulls)  
+![Docker Pulls](https://img.shields.io/docker/pulls/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17)  
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
