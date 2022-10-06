@@ -1,8 +1,8 @@
 # Debian-based Mandrel image optimized for building Quarkus projects
 
-last updated: Thu Oct  6 00:17:01 CEST 2022  
+last updated: Thu Oct  6 10:13:29 CEST 2022  
 author: Lukasz Ochmanski (github@ochmanski.de)  
-Latest tag: 1.1.8  
+Latest tag: 0.0.2  
 &nbsp;
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -52,12 +52,12 @@ sdk install gradle 7.5
 
 ## 1. How to clone:
 ```bash
-git clone git@github.com:lukaszochmanski/base.images.debian.11-bullseye.mandrel.22-1.java.17.mandrel-22-1-gradle-7-5-java-17.git $GITHUB/base/images/debian/11-bullseye/mandrel/22-1/java/17/mandrel-22-1-gradle-7-5-java-17
+git clone git@github.com:lukaszochmanski/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17.git $GITHUB/base/images/debian/11-bullseye/mandrel/22-2/java/17/mandrel-22-2-gradle-7-5-java-17
 ```
 &nbsp;
 
 ## 2. GitHub repository URL
-https://github.com/lukaszochmanski/base.images.debian.11-bullseye.mandrel.22-1.java.17.mandrel-22-1-gradle-7-5-java-17
+https://github.com/lukaszochmanski/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 &nbsp;
 
 &nbsp;
@@ -79,21 +79,21 @@ More about Gradle Docker Plugin: https://github.com/palantir/gradle-docker
 &nbsp;
 
 ## 4. DockerHub page:
-https://hub.docker.com/repository/docker/ochmanskide/base.images.debian.11-bullseye.mandrel.22-1.java.17.mandrel-22-1-gradle-7-5-java-17
+https://hub.docker.com/repository/docker/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 &nbsp;
 
 &nbsp;
 
 ## 5. Image coordinates:
 ```  
-docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-1.java.17.mandrel-22-1-gradle-7-5-java-17:1.1.8
+docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:0.0.2
 ```
 
 ## 6. Docker images:
 ```
 REPOSITORY                                                                                                                                   TAG                    SIZE
-ochmanskide/base.images.debian.11-bullseye.mandrel.22-1.java.17.mandrel-22-1-gradle-7-5-java-17   1.1.8                  1.18GB
-ochmanskide/base.images.debian.11-bullseye.mandrel.22-1.java.17.mandrel-22-1-gradle-7-5-java-17   latest                 1.18GB
+ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   0.0.2                  1.18GB
+ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   latest                 1.18GB
 debian                                                                                            stable-20220711-slim   80.4MB
 ```
 
@@ -102,22 +102,22 @@ debian                                                                          
 ### Mandrel Image
 ### Debian Slim
 ### Debian based Mandrel Official Image
-### base/images/debian/debian-11-bullseye/mandrel/22-1/java-17/mandrel-22-1-gradle-7-5-java-17
-### base.images.debian.11-bullseye.mandrel.22-1.java.17.mandrel-22-1-gradle-7-5-java-17
-### ochmanskide/base.images.debian.11-bullseye.mandrel.22-1.java.17.mandrel-22-1-gradle-7-5-java-17
+### base/images/debian/debian-11-bullseye/mandrel/22-2/java-17/mandrel-22-2-gradle-7-5-java-17
+### base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
+### ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   00-slim            80MB   (80MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   01-clean           80MB   (0MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   02-graalvm         465MB  (385MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   03-gradle          594MB  (129MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   04-aws-cli         753MB  (159MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   05-docker-cli      805MB  (52MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   06-dockerd         870MB  (65MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   07-containerd      904MB  (34MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   08-build-essential
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   09-libz-dev
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   10-zlib1g-dev      1.11GB (196MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   11-git             1.18GB (70MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   00-slim            80MB   (80MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   01-clean           80MB   (0MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   02-graalvm         465MB  (385MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   03-gradle          594MB  (129MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   04-aws-cli         753MB  (159MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   05-docker-cli      805MB  (52MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   06-dockerd         870MB  (65MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   07-containerd      904MB  (34MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   08-build-essential
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   09-libz-dev
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   10-zlib1g-dev      1.11GB (196MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   11-git             1.18GB (70MB)
 ```
 
 ## 8. based on image:
@@ -179,7 +179,7 @@ apt install g++ zlib1g-dev libfreetype6-dev
 
 ## 9. image details:
 ```bash
-$ docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-1.java.17.mandrel-22-1-gradle-7-5-java-17:1.1.8
+$ docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:0.0.2
 
 # echo $0
 /bin/bash
@@ -209,7 +209,7 @@ JAVA_HOME=/opt/graalvm
 GRADLE_HOME=/opt/gradle
 DOCKER_REPOSITORY=releases
 PWD=/home/gradle
-IMAGE_SOURCE=https://github.com/lukaszochmanski/base.images.debian.11-bullseye.mandrel.22-1.java.17.mandrel-22-1-gradle-7-5-java-17
+IMAGE_SOURCE=https://github.com/lukaszochmanski/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 HOME=/root
 GRADLE_VERSION=7.5
 TERM=xterm
