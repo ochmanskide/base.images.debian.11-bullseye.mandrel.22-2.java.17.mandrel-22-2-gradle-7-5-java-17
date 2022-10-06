@@ -14,8 +14,8 @@ author: Lukasz Ochmanski (github@ochmanski.de)
 ![mandrel](https://img.shields.io/badge/Mandrel-22.2.0-brightgreen) 
 ![distribution](https://img.shields.io/badge/Distribution-Debian-brightgreen) 
 ![arch](https://img.shields.io/badge/Arch-amd64-brightgreen)  
-
-
+  
+  
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
