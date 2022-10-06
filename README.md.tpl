@@ -448,5 +448,5 @@ I will be happy to help you.
 
 ### 11.2. Is this image compatible with AWS CodeBuild pipeline?
 - yes, you could use it in the AWS environment, but you just need to install AWS-CLI.  
-I already prepared a shell script `./scripts/install/05-install-aws-cli.sh`.  
+I already prepared a shell script `./scripts/install/05-install-aws-cli.sh` and `10-import-rds-certificates.sh`.  
 Simply run it and you should be able to authenticate with all AWS resources.  
