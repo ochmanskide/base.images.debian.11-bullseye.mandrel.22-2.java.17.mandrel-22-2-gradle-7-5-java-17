@@ -1,9 +1,10 @@
 # Debian-based Mandrel image optimized for building Quarkus projects
 
-last updated: last updated: Thu Oct  6 15:15:53 CEST 2022    
+last updated: last updated: Thu Oct  6 17:19:50 CEST 2022   
 author: Lukasz Ochmanski (github@ochmanski.de)  
   
-[![Github tag](https://badgen.net/github/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17?icon=github&kill_cache=1)](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17/tags/1.0.5)  
+![[Github tag](https://badgen.net/github/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17?icon=github&kill_cache=1)](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17/tags/1.0.6)  
+&nbsp;
   
 **Project details:**  
 ![GitHub](https://img.shields.io/github/license/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17)
@@ -100,13 +101,13 @@ https://hub.docker.com/repository/docker/ochmanskide/base.images.debian.11-bulls
 
 ## 5. Image coordinates:
 ```  
-docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:1.0.5
+docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:1.0.6
 ```
 
 ## 6. Docker images:
 ```
 REPOSITORY                                                                                        TAG                    SIZE
-ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   1.0.5                  1.18GB
+ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   1.0.6                  1.18GB
 ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   latest                 1.18GB
 debian                                                                                            stable-20220711-slim   80.4MB
 ```
@@ -193,7 +194,7 @@ apt install g++ zlib1g-dev libfreetype6-dev
 
 ## 9. image details:
 ```bash
-$ docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:1.0.5
+$ docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:1.0.6
 
 # echo $0
 /bin/bash
@@ -217,31 +218,31 @@ BUG_REPORT_URL="https://bugs.debian.org/"
 
 # printenv
 GRAALVM_HOME=/opt/graalvm
-DOCKER_HUB_URL=https://hub.docker.com/repository/docker/
-DOCKER_HOST=ochmanskide
+HOSTNAME=85716d0ea82c
 JAVA_HOME=/opt/graalvm
 GRADLE_HOME=/opt/gradle
-DOCKER_REPOSITORY=releases
 PWD=/home/gradle
 IMAGE_SOURCE=https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 HOME=/root
 GRADLE_VERSION=7.5
+GRADLE_USER_HOME=/home/gradle/.gradle
 TERM=xterm
-HOST=ochmanskide
 SHLVL=1
+DOCKER_HUB_URL=https://hub.docker.com/repository/docker/
 PATH=/opt/graalvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+DOCKER_HUB_HOST=ochmanskide
 DOWNLOADS=/downloads
 DEBIAN_FRONTEND=noninteractive
-JAVA_VERSION=17.0.3+7
+JAVA_VERSION=17.0.4
 _=/usr/bin/printenv
 
 # curl --version
 bash: curl: command not found
 
 # java -version
-openjdk version "17.0.3" 2022-04-19
-OpenJDK Runtime Environment Temurin-17.0.3+7 (build 17.0.3+7)
-OpenJDK 64-Bit Server VM Temurin-17.0.3+7 (build 17.0.3+7, mixed mode, sharing)
+openjdk 17.0.4 2022-07-19
+OpenJDK Runtime Environment Temurin-17.0.4+8 (build 17.0.4+8)
+OpenJDK 64-Bit Server VM Temurin-17.0.4+8 (build 17.0.4+8, mixed mode, sharing)
 root@40d34d5c68df:/home/gradle#
 
 # git version
@@ -255,9 +256,10 @@ Docker version 20.10.11, build dea9396
 Welcome to Gradle 7.5!
 
 Here are the highlights of this release:
- - Aggregated test and JaCoCo reports
- - Marking additional test source directories as tests in IntelliJ
- - Support for Adoptium JDKs in Java toolchains
+ - Support for Java 18
+ - Support for building with Groovy 4
+ - Much more responsive continuous builds
+ - Improved diagnostics for dependency resolution
 
 For more details see https://docs.gradle.org/7.5/release-notes.html
 
@@ -266,14 +268,14 @@ For more details see https://docs.gradle.org/7.5/release-notes.html
 Gradle 7.5
 ------------------------------------------------------------
 
-Build time:   2022-02-08 09:58:38 UTC
-Revision:     f0d9291c04b90b59445041eaa75b2ee744162586
+Build time:   2022-07-14 12:48:15 UTC
+Revision:     c7db7b958189ad2b0c1472b6fe663e6d654a5103
 
-Kotlin:       1.5.31
-Groovy:       3.0.9
+Kotlin:       1.6.21
+Groovy:       3.0.10
 Ant:          Apache Ant(TM) version 1.10.11 compiled on July 10 2021
-JVM:          17.0.3 (Eclipse Adoptium 17.0.3+7)
-OS:           Linux 5.10.104-linuxkit amd64
+JVM:          17.0.4 (Eclipse Adoptium 17.0.4+8)
+OS:           Linux 5.10.25-linuxkit amd64
 
 
 # aws --version
@@ -296,6 +298,7 @@ drwxr-xr-x 1 root root 4096 Apr 19 10:21 .gradle
 
 ## 10. Quick start
 ```bash
+docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 java -version && echo
 gradle -version && echo
 docker --version && echo
@@ -310,6 +313,7 @@ docker images && echo
 ### 10.1. Run Quarkus with Gradle
 clone the project:
 ```bash
+docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 git clone https://github.com/ochmanskide/quarkus-jpa-example.git /home/quarkus/quarkus-jpa-example
 cd /home/quarkus/quarkus-jpa-example
 ```
