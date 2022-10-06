@@ -1,9 +1,9 @@
 # Debian-based Mandrel image optimized for building Quarkus projects
 
-last updated: last updated: Thu Oct  6 21:09:14 CEST 2022   
+last updated: last updated: Thu Oct  6 21:12:34 CEST 2022   
 author: Lukasz Ochmanski (github@ochmanski.de)  
   
-[![Github tag](https://badgen.net/github/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17?icon=github&kill_cache=1)](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17/tags/1.0.8)  
+[![Github tag](https://badgen.net/github/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17?icon=github&kill_cache=1)](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17/tags/1.0.9)  
 &nbsp;
   
 **Project details:**  
@@ -37,8 +37,8 @@ author: Lukasz Ochmanski (github@ochmanski.de)
 - [9. image details](#9-image-details)
 - [10. Quick start](#10-quick-start)
 - [10.1. Run Quarkus with Gradle](#101-run-quarkus-with-gradle)
-- [10.2. Run Quarkus with Maven](#102-run-quarkus-with-maven)
-- [10.3. How to convert Maven project into Gradle](#103-how-to-convert-maven-project-into-gradle)
+    - [10.2. Run Quarkus with Maven](#102-run-quarkus-with-maven)
+    - [10.3. How to convert Maven project into Gradle](#103-how-to-convert-maven-project-into-gradle)
 - [11. Frequently Asked Questions (FAQ)](#11-frequently-asked-questions-faq)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -101,13 +101,13 @@ https://hub.docker.com/repository/docker/ochmanskide/base.images.debian.11-bulls
 
 ## 5. Image coordinates:
 ```  
-docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:1.0.8
+docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:1.0.9
 ```
 
 ## 6. Docker images:
 ```
 REPOSITORY                                                                                        TAG                    SIZE
-ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   1.0.8                  1.18GB
+ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   1.0.9                  1.18GB
 ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   latest                 1.18GB
 debian                                                                                            stable-20220711-slim   80.4MB
 ```
@@ -194,7 +194,7 @@ apt install g++ zlib1g-dev libfreetype6-dev
 
 ## 9. image details:
 ```bash
-$ docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:1.0.8
+$ docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:1.0.9
 
 # echo $0
 /bin/bash
