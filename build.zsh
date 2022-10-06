@@ -1,6 +1,13 @@
 #!/usr/bin/env zsh
 
-#login
+# This is a backup solution for people that don't know how to use Gradle.
+# This script should be used only in last resort or for testing purposes
+# bacause it does exactly the same job as `gradle docker` command, just worse...
+# please install SDKMAN, Java, and Gradle
+# your life will be easier
+# thank you
+
+#docker login
 cd $GITHUB/base/images/debian/11-bullseye/mandrel/22-2/java/17/mandrel-22-2-gradle-7-5-java-17 || exit
 DOCKER_HUB_HOST=ochmanskide
 #GROUP_ID=$(gradle rootProjectGroupRaw -q)
