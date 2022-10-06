@@ -52,12 +52,12 @@ sdk install gradle 7.5
 
 ## 1. How to clone:
 ```bash
-git clone git@github.com:lukaszochmanski/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17.git $GITHUB/base/images/debian/11-bullseye/mandrel/22-2/java/17/mandrel-22-2-gradle-7-5-java-17
+git clone git@github.com:ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17.git $GITHUB/base/images/debian/11-bullseye/mandrel/22-2/java/17/mandrel-22-2-gradle-7-5-java-17
 ```
 &nbsp;
 
 ## 2. GitHub repository URL
-https://github.com/lukaszochmanski/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
+https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 &nbsp;
 
 &nbsp;
@@ -209,7 +209,7 @@ JAVA_HOME=/opt/graalvm
 GRADLE_HOME=/opt/gradle
 DOCKER_REPOSITORY=releases
 PWD=/home/gradle
-IMAGE_SOURCE=https://github.com/lukaszochmanski/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
+IMAGE_SOURCE=https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 HOME=/root
 GRADLE_VERSION=7.5
 TERM=xterm
@@ -296,7 +296,7 @@ docker images && echo
 ### 10.1. Run Quarkus with Gradle
 clone the project:
 ```bash
-git clone https://github.com/lukaszochmanski/quarkus-jpa-example.git /home/quarkus/quarkus-jpa-example
+git clone https://github.com/ochmanskide/quarkus-jpa-example.git /home/quarkus/quarkus-jpa-example
 cd /home/quarkus/quarkus-jpa-example
 ```
 build native image:
