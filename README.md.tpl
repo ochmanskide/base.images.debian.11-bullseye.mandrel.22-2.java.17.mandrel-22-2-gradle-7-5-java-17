@@ -438,3 +438,15 @@ when the build completes, you may run the image, which is located somewhere in /
 ```
 
 ## 11. Frequently Asked Questions (FAQ)
+### 11.1. Is this project OpenSource?
+Yes, you can use this project in anyway you like. Feel free to copy, fork or do whatever you like with it.  
+If you have questions about licensing, feel free to email me.  
+
+### 11.2. How can I contact the maintainer?
+if you have questions, feel free to send me an email: github@ochmanski.de  
+I will be happy to help you.
+
+### 11.2. Is this image compatible with AWS CodeBuild pipeline?
+- yes, you could use it in the AWS environment, but you just need to install AWS-CLI.  
+I already prepared a shell script `./scripts/install/05-install-aws-cli.sh`.  
+Simply run it and you should be able to authenticate with all AWS resources.  
