@@ -19,7 +19,10 @@ Latest tag: 1.0.2
 ![Docker Pulls](https://img.shields.io/docker/pulls/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17) 
 ![Docker Stars](https://img.shields.io/docker/stars/ochmanskide/graalvm-gradle?label=graalvm-gradle%20stars) 
 ![Docker Stars](https://img.shields.io/docker/stars/ochmanskide/mandrel-gradle?label=mandrel-gradle%20stars) 
-![Docker Stars](https://img.shields.io/docker/stars/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17)  
+![Docker Stars](https://img.shields.io/docker/stars/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17) 
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/ochmanskide/mandrel-gradle/latest) 
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/ochmanskide/mandrel-gradle/latest) 
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17)  
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
