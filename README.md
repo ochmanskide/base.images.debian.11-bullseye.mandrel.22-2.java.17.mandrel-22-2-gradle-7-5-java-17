@@ -12,7 +12,7 @@ Latest tag: 1.0.0
 `#quarkus`  
 `#debian`  
 `#amd64`  
-`#native-tools`  
+`#native-image`  
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->

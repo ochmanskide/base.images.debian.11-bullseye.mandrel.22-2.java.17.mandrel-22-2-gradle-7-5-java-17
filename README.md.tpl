@@ -12,7 +12,7 @@ Latest tag: ###CI_COMMIT_TAG###
 `#quarkus`  
 `#debian`  
 `#amd64`  
-`#native-tools`  
+`#native-image`  
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
