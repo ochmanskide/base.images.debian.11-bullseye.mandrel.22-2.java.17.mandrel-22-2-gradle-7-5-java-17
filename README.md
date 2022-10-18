@@ -322,7 +322,7 @@ gradle build -x test -Dquarkus.package.type=native
 ```
 when the build completes, you may run the image, which is located somewhere in /build/libs/ directory.
 ```bash
-/home/quarkus/quarkus-jpa-example/build/libs/quarkus-jpa-example-1.0.0-SNAPSHOT-runner
+/home/quarkus/code-with-quarkus/build/libs/code-with-quarkus-1.0.0-SNAPSHOT-runner
 ```
 
 ### 10.2. Run Quarkus with Maven
