@@ -113,7 +113,7 @@ ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gra
 debian                                                                                            stable-20220711-slim   80.4MB
 ```
 
-## 7. What's in this image:
+## 7. What's in this image?
 ```
 ### Mandrel Image
 ### Debian Slim
