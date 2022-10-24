@@ -103,7 +103,7 @@ https://hub.docker.com/repository/docker/ochmanskide/base.images.debian.11-bulls
 docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:1.0.10
 ```
 
-## 6. Docker images:
+## 6. Available Docker images and tags:
 ```
 REPOSITORY                                                                                        TAG                    SIZE
 ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   1.0.10                  1.18GB
@@ -111,7 +111,7 @@ ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gra
 debian                                                                                            stable-20220711-slim   80.4MB
 ```
 
-## 7. Layers:
+## 7. What's in this image:
 ```
 ### Mandrel Image
 ### Debian Slim
@@ -134,7 +134,7 @@ debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   10-zlib1g-dev      1.11GB (
 debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   11-git             1.18GB (70MB)
 ```
 
-## 8. based on image:
+## 8. FROM image:
 https://hub.docker.com/_/debian
 
 ```  
@@ -188,7 +188,7 @@ On Ubuntu-like systems with:
 apt install g++ zlib1g-dev libfreetype6-dev
 ```
 
-## 11. image details:
+## 11. Docker image details:
 ```bash
 $ docker run -it --entrypoint /bin/bash ochmanskide/mandrel-gradle:latest
 
