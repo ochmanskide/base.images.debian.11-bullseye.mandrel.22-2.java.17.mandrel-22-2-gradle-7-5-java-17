@@ -1,9 +1,9 @@
 # Debian-based Mandrel image optimized for building Quarkus projects
 
-last updated: last updated: Thu Oct  6 21:13:37 CEST 2022   
+last updated: last updated: Mon Oct 24 15:37:44 CEST 2022   
 author: Lukasz Ochmanski (github@ochmanski.de)  
   
-[![Github tag](https://badgen.net/github/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17?icon=github&kill_cache=1)](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17/tags/1.0.10)  
+[![Github tag](https://badgen.net/github/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17?icon=github&kill_cache=1)](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17/tags/1.0.11)  
 &nbsp;
   
 **Project details:**  
@@ -21,9 +21,6 @@ author: Lukasz Ochmanski (github@ochmanski.de)
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [About](#about)
-- [Before you start](#before-you-start)
-  - [Gradle configuration](#gradle-configuration)
 - [1. How to clone:](#1-how-to-clone)
 - [2. GitHub repository URL](#2-github-repository-url)
 - [3. How to build locally:](#3-how-to-build-locally)
@@ -111,7 +108,7 @@ docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mand
 ## 6. Available Docker images and tags:
 ```
 REPOSITORY                                                                                        TAG                    SIZE
-ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   1.0.10                  1.18GB
+ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   1.0.11                  1.18GB
 ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   latest                 1.18GB
 debian                                                                                            stable-20220711-slim   80.4MB
 ```
