@@ -21,24 +21,26 @@ author: Lukasz Ochmanski (github@ochmanski.de)
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [About](#about)
-- [Before you start](#before-you-start)
-- [Gradle configuration](#gradle-configuration)
-- [1. How to clone](#1-how-to-clone)
+- [1. How to clone:](#1-how-to-clone)
 - [2. GitHub repository URL](#2-github-repository-url)
-- [3. How to build locally](#3-how-to-build-locally)
-- [4. DockerHub page](#4-dockerhub-page)
-- [5. Image coordinates](#5-image-coordinates)
-- [6. Docker images](#6-docker-images)
-- [7. Layers](#7-layers)
-- [8. based on image](#8-based-on-image)
-    - [8.1. References](#81-references)
-    - [8.2. Mandrel](#82-mandrel)
-- [9. image details](#9-image-details)
-- [10. Quick start](#10-quick-start)
-    - [10.1. Run Quarkus with Gradle](#101-run-quarkus-with-gradle)
-    - [10.2. Run Quarkus with Maven](#102-run-quarkus-with-maven)
-- [11. Frequently Asked Questions (FAQ)](#11-frequently-asked-questions-faq)
+- [3. How to build locally:](#3-how-to-build-locally)
+- [4. DockerHub page:](#4-dockerhub-page)
+- [5. Image coordinates:](#5-image-coordinates)
+- [6. Available Docker images and tags:](#6-available-docker-images-and-tags)
+- [7. What's in this image:](#7-whats-in-this-image)
+- [8. FROM image:](#8-from-image)
+- [9. Docker Hub page:](#9-docker-hub-page)
+- [10. Excerpt from official Mandrel documentation](#10-excerpt-from-official-mandrel-documentation)
+- [11. Docker image details:](#11-docker-image-details)
+- [12. Usage](#12-usage)
+  - [12.1. Run Quarkus with Gradle](#121-run-quarkus-with-gradle)
+  - [12.2. Run Quarkus with Maven](#122-run-quarkus-with-maven)
+- [13. License](#13-license)
+- [14. Acknowledgments](#14-acknowledgments)
+- [15. Frequently Asked Questions (FAQ)](#15-frequently-asked-questions-faq)
+  - [15.1. Is this project OpenSource?](#151-is-this-project-opensource)
+  - [15.2. How can I contact the maintainer?](#152-how-can-i-contact-the-maintainer)
+  - [15.2. Is this image compatible with AWS CodeBuild pipeline?](#152-is-this-image-compatible-with-aws-codebuild-pipeline)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
   
@@ -100,10 +102,10 @@ https://hub.docker.com/repository/docker/ochmanskide/base.images.debian.11-bulls
 
 ## 5. Image coordinates:
 ```  
-docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:###CI_COMMIT_TAG###
+docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:1.0.10
 ```
 
-## 6. Docker images:
+## 6. Available Docker images and tags:
 ```
 REPOSITORY                                                                                        TAG                    SIZE
 ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17   ###CI_COMMIT_TAG###                  1.18GB
@@ -111,7 +113,7 @@ ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gra
 debian                                                                                            stable-20220711-slim   80.4MB
 ```
 
-## 7. Layers:
+## 7. What's in this image:
 ```
 ### Mandrel Image
 ### Debian Slim
@@ -134,23 +136,20 @@ debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   10-zlib1g-dev      1.11GB (
 debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   11-git             1.18GB (70MB)
 ```
 
-## 8. based on image:
+## 8. FROM image:
 https://hub.docker.com/_/debian
 
 ```  
 FROM debian:stable-20220711-slim
 ```
 
-##### 8.1. References
-https://github.com/vegardit/docker-graalvm-maven  
+## 9. Docker Hub page:
+https://hub.docker.com/repository/docker/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
+&nbsp;
 
-https://hub.docker.com/r/vegardit/graalvm-maven  
+&nbsp;
 
-https://hub.docker.com/r/vegardit/graalvm-maven/tags  
-
-https://github.com/graalvm/mandrel/releases/tag/mandrel-22.2.0.0-Final  
-
-##### 8.2. Mandrel
+## 10. Excerpt from official Mandrel documentation
 
 **Mandrel 22.2.0.0-Final** is a downstream distribution of the **GraalVM** community edition 22.2.0.  
 Mandrel's main goal is to provide a native-image release specifically to support Quarkus.  
@@ -191,9 +190,9 @@ On Ubuntu-like systems with:
 apt install g++ zlib1g-dev libfreetype6-dev
 ```
 
-## 9. image details:
+## 11. Docker image details:
 ```bash
-$ docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:###CI_COMMIT_TAG###
+$ docker run -it --entrypoint /bin/bash ochmanskide/mandrel-gradle:latest
 
 # echo $0
 /bin/bash
@@ -217,31 +216,31 @@ BUG_REPORT_URL="https://bugs.debian.org/"
 
 # printenv
 GRAALVM_HOME=/opt/graalvm
-HOSTNAME=85716d0ea82c
+DOCKER_HUB_URL=https://hub.docker.com/repository/docker/
+DOCKER_HOST=ochmanskide
 JAVA_HOME=/opt/graalvm
 GRADLE_HOME=/opt/gradle
+DOCKER_REPOSITORY=releases
 PWD=/home/gradle
 IMAGE_SOURCE=https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 HOME=/root
 GRADLE_VERSION=7.5
-GRADLE_USER_HOME=/home/gradle/.gradle
 TERM=xterm
+HOST=ochmanskide
 SHLVL=1
-DOCKER_HUB_URL=https://hub.docker.com/repository/docker/
 PATH=/opt/graalvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-DOCKER_HUB_HOST=ochmanskide
 DOWNLOADS=/downloads
 DEBIAN_FRONTEND=noninteractive
-JAVA_VERSION=17.0.4
+JAVA_VERSION=17.0.3+7
 _=/usr/bin/printenv
 
 # curl --version
 bash: curl: command not found
 
 # java -version
-openjdk 17.0.4 2022-07-19
-OpenJDK Runtime Environment Temurin-17.0.4+8 (build 17.0.4+8)
-OpenJDK 64-Bit Server VM Temurin-17.0.4+8 (build 17.0.4+8, mixed mode, sharing)
+openjdk version "17.0.3" 2022-04-19
+OpenJDK Runtime Environment Temurin-17.0.3+7 (build 17.0.3+7)
+OpenJDK 64-Bit Server VM Temurin-17.0.3+7 (build 17.0.3+7, mixed mode, sharing)
 root@40d34d5c68df:/home/gradle#
 
 # git version
@@ -273,7 +272,7 @@ Revision:     c7db7b958189ad2b0c1472b6fe663e6d654a5103
 Kotlin:       1.6.21
 Groovy:       3.0.10
 Ant:          Apache Ant(TM) version 1.10.11 compiled on July 10 2021
-JVM:          17.0.4 (Eclipse Adoptium 17.0.4+8)
+JVM:          17.0.3 (Eclipse Adoptium 17.0.3+7)
 OS:           Linux 5.10.25-linuxkit amd64
 
 
@@ -295,9 +294,9 @@ drwxr-xr-x 1 root root 4096 Apr 19 10:21 .gradle
 -rwxr-xr-x 1 root root  807 Apr 14 08:44 .profile
 ```
 
-## 10. Quick start
+## 12. Usage
 ```bash
-docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
+docker run -it --entrypoint /bin/bash ochmanskide/mandrel-gradle
 java -version && echo
 gradle -version && echo
 docker --version && echo
@@ -309,7 +308,7 @@ la /usr/local/bin/containerd && echo
 docker images && echo
 ```
 
-### 10.1. Run Quarkus with Gradle
+### 12.1. Run Quarkus with Gradle
 clone the project:
 ```bash
 docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
@@ -322,10 +321,10 @@ gradle build -x test -Dquarkus.package.type=native
 ```
 when the build completes, you may run the image, which is located somewhere in /build/libs/ directory.
 ```bash
-/home/quarkus/quarkus-jpa-example/build/libs/quarkus-jpa-example-1.0.0-SNAPSHOT-runner
+/home/quarkus/quarkus-jpa-example/build/libs/code-with-quarkus-1.0.0-SNAPSHOT-runner
 ```
 
-### 10.2. Run Quarkus with Maven
+### 12.2. Run Quarkus with Maven
 ```bash
 docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 git clone https://github.com/ochmanskide/quarkus.code-with-quarkus.git /home/quarkus/code-with-quarkus
@@ -334,16 +333,54 @@ cd /home/quarkus/code-with-quarkus/
 ./target/code-with-quarkus-1.0.0-SNAPSHOT-runner
 ```
 
-## 11. Frequently Asked Questions (FAQ)
-### 11.1. Is this project OpenSource?
+## 13. License
+  
+Copyright 2022 Lukasz Ochmanski  
+  
+Licensed under the Apache License, Version 2.0 (the "License");  
+you may not use this file except in compliance with the License.  
+You may obtain a copy of the License at  
+  
+    http://www.apache.org/licenses/LICENSE-2.0  
+  
+Unless required by applicable law or agreed to in writing, software  
+distributed under the License is distributed on an "AS IS" BASIS,  
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
+See the License for the specific language governing permissions and  
+limitations under the License.  
+  
+View license information for the software contained in this image.  
+  
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).  
+  
+Some additional license information which was able to be auto-detected might be found in the repo-info repository's gradle/ directory.  
+  
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.  
+  
+https://hub.docker.com/_/gradle  
+
+## 14. Acknowledgments
+https://github.com/vegardit/docker-graalvm-maven  
+
+https://hub.docker.com/r/vegardit/graalvm-maven  
+
+https://hub.docker.com/r/vegardit/graalvm-maven/tags  
+
+https://github.com/graalvm/mandrel/releases/tag/mandrel-22.2.0.0-Final  
+
+
+## 15. Frequently Asked Questions (FAQ)
+### 15.1. Is this project OpenSource?
 Yes, you can use this project in anyway you like. Feel free to copy, fork or do whatever you like with it.  
 If you have questions about licensing, feel free to email me.  
 
-### 11.2. How can I contact the maintainer?
+### 15.2. How can I contact the maintainer?
 if you have questions, feel free to send me an email: github@ochmanski.de  
 I will be happy to help you.
 
-### 11.2. Is this image compatible with AWS CodeBuild pipeline?
+### 15.2. Is this image compatible with AWS CodeBuild pipeline?
 - yes, you could use it in the AWS environment, but you just need to install AWS-CLI.  
 I already prepared a shell script `./scripts/install/05-install-aws-cli.sh` and `10-import-rds-certificates.sh`.  
 Simply run it and you should be able to authenticate with all AWS resources.  
+As an alternative, you may re-build the image from source and invoke the script directly from the `Dockerfile`.  
+The result will be the same.
