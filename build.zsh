@@ -15,11 +15,11 @@ DOCKER_HUB_HOST=ochmanskide
 #IMAGE_TAG=$(gradle rootProjectVersionRaw -q)
 
 GROUP_ID='base.images.debian.11-bullseye.mandrel.22-2.java.17'
-ARTIFACT_ID='mandrel-22-2-gradle-7-4-java-17'
+ARTIFACT_ID='mandrel-22-2-gradle-7-5-java-17'
 IMAGE_TAG=$(gradle printVersion -q)
 
 docker build -t "$DOCKER_HUB_HOST"/"$GROUP_ID"/"$ARTIFACT_ID":$IMAGE_TAG-slim . # --squash
-docker run --rm -ti --privileged --entrypoint /bin/bash "$HOST"/"$GROUP_ID"/"$ARTIFACT_ID":$IMAGE_TAG-slim
+docker run --rm -ti --privileged --entrypoint /bin/bash "$DOCKER_HUB_HOST"/"$GROUP_ID"/"$ARTIFACT_ID":$IMAGE_TAG-slim
 docker image rm "$DOCKER_HUB_HOST"/"$GROUP_ID"/"$ARTIFACT_ID":$IMAGE_TAG-slim
 echo
 
