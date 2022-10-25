@@ -57,12 +57,12 @@ gradle build -x test -Dquarkus.package.type=native
 /home/quarkus/code-with-quarkus/build/libs/code-with-quarkus-1.0.0-SNAPSHOT-runner
 ```
 
-## 2. How to pull image:
+## 2. How to pull image?
 ```  
 docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17:latest
 ```
 
-## 3. Latest Tags:
+## 3. Latest Tags
 ```
 REPOSITORY                                                                                        TAG                               IMAGE ID       SIZE
 ochmanskide/graalvm-gradle                                                                        mandrel-22-2-gradle-7-5-java-17   00456ebbedab   1.06GB
@@ -80,18 +80,18 @@ ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gra
 ### base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 ### ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   00-slim            80MB   (80MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   01-clean           80MB   (0MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   02-graalvm         465MB  (385MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   03-gradle          594MB  (129MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   04-aws-cli         753MB  (159MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   05-docker-cli      805MB  (52MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   06-dockerd         870MB  (65MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   07-containerd      904MB  (34MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   08-build-essential
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   09-libz-dev
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   10-zlib1g-dev      1.11GB (196MB)
-debian-11-bullseye/mandrel-22-1-gradle-7-5-java-17   11-git             1.18GB (70MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   00-slim            80MB   (80MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   01-clean           80MB   (0MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   02-graalvm         465MB  (385MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   03-gradle          594MB  (129MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   04-aws-cli         753MB  (159MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   05-docker-cli      805MB  (52MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   06-dockerd         870MB  (65MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   07-containerd      904MB  (34MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   08-build-essential
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   09-libz-dev
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   10-zlib1g-dev      1.11GB (196MB)
+debian-11-bullseye/mandrel-22-2-gradle-7-5-java-17   11-git             1.18GB (70MB)
 ```
 
 ## 5. From image:
@@ -101,19 +101,20 @@ https://hub.docker.com/_/debian
 FROM debian:stable-20220711-slim
 ```
 &nbsp;
-## 6. How to clone source code:
+## 6. How to clone source code?
 ```bash
-git clone https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17.git ~/Workspace/ochmanskide/base/images/debian/11-bullseye/mandrel/22-2/java/17/mandrel-22-2-gradle-7-5-java-17
+git clone https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17.git \
+~/Workspace/ochmanskide/base/images/debian/11-bullseye/mandrel/22-2/java/17/mandrel-22-2-gradle-7-5-java-17
 ```
 
 &nbsp;
-## 7. Source code page:
+## 7. Source code page
 https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 &nbsp;
 
 &nbsp;
 
-## 8. How to build image from source:
+## 8. How to build image from source?
 More details available directly in the [Section 3. How to build locally](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17#3-how-to-build-locally) of [README.md](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17) file.  
   
 Excerpt:  
@@ -124,7 +125,7 @@ gradle docker
 ```
 
 &nbsp;
-## 9. Docker Hub page:
+## 9. Docker Hub page
 https://hub.docker.com/repository/docker/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17
 &nbsp;
 
