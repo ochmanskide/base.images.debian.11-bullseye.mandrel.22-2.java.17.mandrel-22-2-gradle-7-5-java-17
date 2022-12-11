@@ -58,7 +58,7 @@ Table 1.1. Supported tags and respective Dockerfile links
   
   &nbsp;  
   &nbsp;  
-### 2.2. Docker Repository naming conventions
+### 1.2. Docker Repository naming conventions
 | REPOSITORY                                                                                                                                                                                                                    | TAG                             | IMAGE ID     | SIZE   |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------|:-------------|:-------|
 | ochmanskide/graalvm-gradle                                                                                                                                                                                                    | mandrel-22-2-gradle-7-5-java-17 | 00456ebbedab | 1.06GB |
@@ -71,7 +71,7 @@ Table 1.1. Supported tags and respective Dockerfile links
 | [`ochmanskide/...11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17`](https://hub.docker.com/repository/docker/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17) | 1.0.6                           | 00456ebbedab | 1.06GB |
 | [`ochmanskide/...11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17`](https://hub.docker.com/repository/docker/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-gradle-7-5-java-17) | latest                          | 00456ebbedab | 1.06GB |
   
-Table 2.2.  Docker Repository naming conventions
+Table 1.2. Docker Repository naming conventions
   
   &nbsp;  
   &nbsp;  
